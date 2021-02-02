@@ -9,6 +9,8 @@
 <style>
 .logofield{
   max-width: 100%;
+  width: 100%;
   height: auto;
+  max-height: 600px;
 }
 </style>

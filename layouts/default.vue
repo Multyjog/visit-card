@@ -1,9 +1,9 @@
 <template>
   <div>
     <Logo />
-    <!-- <NavBar /> -->
-    <Carousel />
+    <NavBar />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 

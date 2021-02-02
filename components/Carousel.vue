@@ -11,6 +11,13 @@
 
       <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
+    <div class="roulette" style="display:none;" :roulette="option"> 
+      <img src="../static/350x300.png" />
+      <img src="../static/350x300.png" />
+      <img src="../static/350x300.png" />
+      <img src="../static/350x300.png" />
+      <img src="../static/350x300.png" />
+    </div> 
   </div>
 </template>
 <style scoped>
@@ -34,10 +41,24 @@
           slideToClickedSlide:'true',
           grabCursor: 'true',
           loop: true,
-          effect: 'cube',
+          effect: 'coverFlow',
           slidesPerView: '3',
           centerSlides: 'true',
           updateOnWindowResize:'true',
+        },
+        option: {
+          speed : 10,
+          duration : 3,
+          stopImageNumber : 0,
+          startCallback : function() {
+            console.log('start');
+          },
+          slowDownCallback : function() {
+            console.log('slowDown');
+          },
+          stopCallback : function($stopElm) {
+            console.log('stop');
+          }
         }
       }
     },

@@ -7,7 +7,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li>
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Untill i figure it out why i need this</a>
       </li>
     </ul>
   </div>
@@ -16,6 +16,6 @@
 
 <style scoped>
 .navbar {
-    background-image: linear-gradient( rgb(28, 63, 18), rgb(0, 0, 0));;
+    background-image: linear-gradient( to right, rgb(38, 77, 36), rgb(19, 18, 18));;
 }
 </style>

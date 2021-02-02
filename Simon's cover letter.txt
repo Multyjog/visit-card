@@ -1,9 +1,9 @@
 Hello, my name is Simon. I am from Moscow.  I am a junior web developer. Right now, I improve my skills in web development 
 and more specifically in Vue.js. 
 
-As I see, you looking for a good Lead Developer, and I hope that you also have a position for me as a Junior Developer. 
+As I see, you looking for a good Senior Frontend Developer, and I hope that you also have a position for me as a Junior Developer. 
 Right now I am in process of building a good CV, and I think, your project will help me a lot.
-I have basic HTML, CSS, JS skills with an emphasis on Vue.js architecture.
+I have basic HTML, CSS, JS, and Gimp skills with an emphasis on Vue.js architecture.
 
 There are some soft skills could be useful for you: 
 - I always seek to learn new things and try to find the information I need by myself
@@ -15,3 +15,10 @@ Please let me know if you have a position for me or need additional info.
 You can contact me by Email: simon.kotov.web@gmail.com
 
 Regards, Simon
+
+
+- Split pages/index.vue to simple components
+- remove colon from title
+- "Sent this one to me" is a call-to-actiuon button, so it should be more visible
+- social icons could be moved to footer
+- set fixed height to photo to avoid page jump on load
