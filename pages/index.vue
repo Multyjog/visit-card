@@ -24,14 +24,7 @@
                 Just <span>hit</span> any buttons on your keyboard and my good
                 friend JavaScript will do all work for you! :-)
               </label>
-              <textarea
-                @keydown.prevent="increaseCounter()"
-                @keydown.backspace.prevent="decreaseCounter()"
-                :value="showContent"
-                class="form-control"
-                id="formText"
-                rows="3"
-              ></textarea>
+              <Typer :text="text" />
               <div class="mybtn mt-3">
                 <button title="Actually dont need to ;)">
                   Send this one to me
@@ -40,7 +33,6 @@
             </div>
           </form>
           <div class="social-buttons row mt-5">
-            <!-- Gonna show by press the overlay -->
             <h1 class="col-md-3">
               <a
                 href="https://www.instagram.com/multyjog/?hl=ru"
@@ -94,7 +86,7 @@
 </template>
 
 <script>
-const formContent = `Hello, my name is Simon. I am from Moscow. Right now, I improve my skills in web development and more specifically in Vue.js. 
+const text = `Hello, my name is Simon. I am from Moscow. Right now, I improve my skills in web development and more specifically in Vue.js. 
 There are some skills that could be useful for your project: 
 - I always seek to learn new things and try to find information I need by myself
 - I can handle time management, and always available during working ours  
@@ -104,15 +96,9 @@ There are some skills that could be useful for your project:
 Regards, Simon`;
 export default {
   data() {
-    return { counter: 0, isClicked: false };
+    return { isClicked: false, text: text };
   },
   methods: {
-    increaseCounter() {
-      this.counter = Math.min(this.counter + 9, formContent.length);
-    },
-    decreaseCounter() {
-      this.counter = Math.max(this.counter - 18, 0);
-    },
     toggleClicked() {
       if (this.isClicked) return;
       this.isClicked = true;
@@ -120,11 +106,6 @@ export default {
       setTimeout(() => {
         hidden.scrollIntoView();
       }, 0);
-    }
-  },
-  computed: {
-    showContent() {
-      return formContent.substring(0, this.counter);
     }
   }
 };
@@ -142,9 +123,6 @@ export default {
 }
 label {
   font-weight: bolder;
-}
-#formText {
-  height: 260px;
 }
 .social-buttons {
   text-align: center;
