@@ -18,7 +18,6 @@ Regards, Simon
 
 
 - Split pages/index.vue to simple components
-- remove colon from title
 - "Sent this one to me" is a call-to-actiuon button, so it should be more visible
 - social icons could be moved to footer
 - set fixed height to photo to avoid page jump on load

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container mb-5">
-      <div class="commerce">BEST MATCH FOR YOU:</div>
+      <div class="commerce">BEST MATCH FOR YOU</div>
       <div class="row">
         <div class="col-md-4 cont">
           <img class="photo" src="../static/me1.jpeg" alt="" />
@@ -26,46 +26,13 @@
               </label>
               <Typer :text="text" />
               <div class="mybtn mt-3">
-                <button title="Actually dont need to ;)">
+                <button class="butt" title="Actually dont need to ;)">
                   Send this one to me
                 </button>
               </div>
             </div>
           </form>
-          <div class="social-buttons row mt-5">
-            <h1 class="col-md-3">
-              <a
-                href="https://www.instagram.com/multyjog/?hl=ru"
-                title="My Instagram"
-                target="_blank"
-                ><font-awesome-icon :icon="['fab', 'instagram']"
-              /></a>
-            </h1>
-            <h1 class="col-md-3">
-              <a
-                href="https://www.facebook.com/semen.kotov.315/"
-                title="My FaceBook"
-                target="_blank"
-                ><font-awesome-icon :icon="['fab', 'facebook-f']"
-              /></a>
-            </h1>
-            <h1 class="col-md-3">
-              <a
-                href="https://stackoverflow.com/users/15061974/%d0%a1%d0%b5%d0%bc%d1%91%d0%bd-%d0%9a%d0%be%d1%82%d0%be%d0%b2"
-                title="My StackOverflow"
-                target="_blank"
-                ><font-awesome-icon :icon="['fab', 'stack-overflow']"
-              /></a>
-            </h1>
-            <h1 class="col-md-3">
-              <a
-                href="https://github.com/Multyjog"
-                title="My GitHub"
-                target="_blank"
-                ><font-awesome-icon :icon="['fab', 'github']"
-              /></a>
-            </h1>
-          </div>
+          <SocialButtons />
         </div>
       </div>
       <div :class="{ 'hidden-content': true, hidden: !isClicked }">
@@ -112,6 +79,11 @@ export default {
 </script>
 
 <style scoped>
+.butt {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
 .hidden {
   display: none !important;
 }
@@ -123,13 +95,6 @@ export default {
 }
 label {
   font-weight: bolder;
-}
-.social-buttons {
-  text-align: center;
-}
-a {
-  text-decoration: none;
-  color: white;
 }
 button {
   border-radius: 15px;
