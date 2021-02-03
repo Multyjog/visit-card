@@ -3,15 +3,16 @@
     <div class="container mb-5">
       <div class="commerce">BEST MATCH FOR YOU</div>
       <div class="row">
-        <div class="col-md-4 cont">
-          <img class="photo" src="../static/me1.jpeg" alt="" />
+        <div class="col-md-3 cont">
+          <img class="photo" src="../static/me.jpeg" alt="" />
           <div class="overlay" @click="toggleClicked()">
             <div class="text">No hidden content here</div>
           </div>
           <h3 class="me">Thats me</h3>
         </div>
+        <div style="float:none" class="col-md-1"></div>
         <div class="col-md-8">
-          <h2 class="myTitle">Little about me</h2>
+          <h1 class="myTitle">Little about me</h1>
           <label
             >I live in Moscow. Love extremely sports like: Snowboard and
             Longboard. I drive a bike, and also kind of funny and interesting
@@ -79,6 +80,9 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  max-width: 1400px;
+}
 .butt {
   background-color: green;
   color: white;
@@ -95,6 +99,7 @@ export default {
 }
 label {
   font-weight: bolder;
+  font-size: larger;
 }
 button {
   border-radius: 15px;
@@ -128,12 +133,14 @@ span {
   font-weight: bolder;
   color: rgba(255, 255, 255, 0.849);
   text-shadow: 4px 3px rgb(36, 36, 36);
+  margin: 1rem auto 2rem;
 }
 .cont:hover .overlay {
   opacity: 0.5;
 }
 .cont {
   padding: 0px !important;
+  margin: auto 0 auto 0;
 }
 .text {
   cursor: pointer;
@@ -150,7 +157,7 @@ span {
 .photo {
   max-width: 100%;
   height: auto;
-  width: 100%;
+  width: auto;
   border-radius: 10px 10px 0px 0px;
 }
 .me {
