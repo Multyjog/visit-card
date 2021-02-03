@@ -18,6 +18,10 @@ export default {
       }
     ]
   },
+  target: "static",
+  router: {
+    base: "/visit-card/"
+  },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
