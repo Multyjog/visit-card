@@ -12,7 +12,7 @@
         </div>
         <div style="float:none" class="col-md-1"></div>
         <div class="col-md-8">
-          <h1 class="myTitle">Little about me</h1>
+          <h1 class="myTitle mb-5">Little about me</h1>
           <label
             >I live in Moscow. Love extremely sports like: Snowboard and
             Longboard. I drive a bike, and also kind of funny and interesting
@@ -96,6 +96,7 @@ export default {
 }
 .myTitle {
   text-align: center;
+  font-weight: bold;
 }
 label {
   font-weight: bolder;
@@ -107,9 +108,6 @@ button {
 }
 .mybtn {
   text-align: center;
-}
-body {
-  font-family: sans-serif;
 }
 span {
   font-weight: bolder;
