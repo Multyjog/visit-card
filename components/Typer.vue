@@ -33,5 +33,6 @@ export default {
 textarea {
   width: 100%;
   height: 260px;
+  border-radius: 10px;
 }
 </style>
