@@ -34,10 +34,27 @@
 
 <style scoped>
 .social-buttons {
-  text-align: center;
+  text-align: -webkit-center;
 }
-a {
+.social-buttons a:hover {
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  transition: -webkit-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+  transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
+  -webkit-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+}
+.social-buttons a {
+  display: block;
+  position: relative;
+  width: 45px;
+  font-size: 50px;
+  text-align: center;
   text-decoration: none;
   color: white;
+}
+.social-buttons a:hover {
+  text-decoration: none;
+  color: rgba(17, 17, 17, 0.651);
 }
 </style>
