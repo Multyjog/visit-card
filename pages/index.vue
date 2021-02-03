@@ -4,7 +4,7 @@
       <div class="commerce">BEST MATCH FOR YOU</div>
       <div class="row">
         <div class="col-md-3 cont">
-          <img class="photo" src="../static/me.jpeg" alt="" />
+          <img class="photo" src="~assets/me.jpeg" alt="" />
           <div class="overlay" @click="toggleClicked()">
             <div class="text">No hidden content here</div>
           </div>
