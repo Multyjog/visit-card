@@ -13,18 +13,16 @@
         <div style="float:none" class="col-md-1"></div>
         <div class="col-md-8">
           <h1 class="myTitle mb-5">Little about me</h1>
-          <label
+          <label class="mb-5"
             >I live in Moscow. Love extremely sports like: Snowboard and
             Longboard. I drive a bike, and also kind of funny and interesting
-            person. Contact me, you will like it!
+            person. Contact me, you will like it! I still don't have a good CV.
+            So please, help me complete it. Just <span>hit</span> any buttons on
+            your keyboard and my good friend JavaScript will do all work for
+            you! :-)
           </label>
           <form>
             <div>
-              <label>
-                I still don't have a good CV. So please, help me complete it.
-                Just <span>hit</span> any buttons on your keyboard and my good
-                friend JavaScript will do all work for you! :-)
-              </label>
               <Typer :text="text" />
               <div class="mybtn mt-3">
                 <button class="butt" title="Actually dont need to ;)">
