@@ -16,10 +16,12 @@
           <label class="mb-5"
             >I live in Moscow. Love extremely sports like: Snowboard and
             Longboard. I drive a bike, and also kind of funny and interesting
-            person. Contact me, you will like it! I still don't have a good CV.
-            So please, help me complete it. Just <span>hit</span> any buttons on
-            your keyboard and my good friend JavaScript will do all work for
-            you! :-)
+            person. Contact me, you will like it!
+            <p>
+              I still don't have a good CV. So please, help me complete it. Just
+              <span>hit</span> any buttons on your keyboard and my good friend
+              JavaScript will do all work for you! :-)
+            </p>
           </label>
           <form>
             <div>
@@ -54,10 +56,10 @@
 <script>
 const text = `Hello, my name is Simon. I am from Moscow. Right now, I improve my skills in web development and more specifically in Vue.js. 
 There are some skills that could be useful for your project: 
-- I always seek to learn new things and try to find information I need by myself
+- I always seek to learn new things and try to find the information I need by myself
 - I can handle time management, and always available during working ours  
 - I have experience with project management tools like Jira/Trello, and always update my progress and status
-- I use version control system and follow 'Keep a Changelog'
+- I use a version control system and follow 'Keep a Changelog'
 
 Regards, Simon`;
 export default {
