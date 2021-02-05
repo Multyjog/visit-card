@@ -27,7 +27,7 @@
             <div>
               <Typer :text="text" />
               <div class="mybtn mt-3">
-                <button class="butt" title="Actually dont need to ;)">
+                <button class="btn-grad" title="Actually dont need to ;)">
                   Send this one to me
                 </button>
               </div>
@@ -83,11 +83,27 @@ export default {
 .container {
   max-width: 1400px;
 }
-.butt {
-  background-color: green;
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #215f00 0%,
+    #0f2c06 51%,
+    #215f00 100%
+  );
+  text-transform: uppercase;
+  transition: 0.8s;
+  background-size: 200% auto;
   color: white;
+  font-size: 1rem;
   font-weight: bold;
+  padding: 0.5rem 0.8rem;
 }
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
 .hidden {
   display: none !important;
 }
@@ -159,8 +175,8 @@ span {
   border-radius: 10px 10px 0px 0px;
 }
 .me {
+  background-color: white;
   text-align: center;
-  background-color: aliceblue;
   width: 100%;
   border-radius: 0px 0px 10px 10px;
   margin: 0;
