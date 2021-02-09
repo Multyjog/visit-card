@@ -113,6 +113,7 @@ export default {
 .myTitle {
   text-align: center;
   font-weight: bold;
+  text-decoration: underline;
 }
 label {
   font-weight: bolder;
