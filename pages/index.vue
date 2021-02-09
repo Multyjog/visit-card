@@ -8,28 +8,37 @@
           <div class="overlay" @click="toggleClicked()">
             <div class="text">No hidden content here</div>
           </div>
-          <h3 class="me">Thats me</h3>
+          <h3 class="me">
+            Person of the Year 2006.
+            <h3 class="little">According to <span>"Time"</span> magazine</h3>
+          </h3>
         </div>
         <div style="float:none" class="col-md-1"></div>
         <div class="col-md-8">
           <h1 class="myTitle mb-5">Little about me</h1>
-          <label
-            >I live in Moscow. Love extremely sports like: Snowboard and
-            Longboard. I drive a bike, and also kind of funny and interesting
-            person. Contact me, you will like it!
+          <label class="mb-4"
+            >Hello I am from Moscow, but wright now i live in coworking in
+            Antalya, with company of developers that have a 5+ and 10+ years of
+            experience. This guys teaching me every day, to do the RIGHT code,
+            and simple things i can't learn by myself without experience in
+            development.
+            <p>
+              I still don't have a good CV. So please, help me complete it. Just
+              <span>hit</span> any buttons on your keyboard and my good friend
+              JavaScript will do all work for you! :-)
+            </p>
           </label>
           <form>
             <div>
-              <label>
-                I still don't have a good CV. So please, help me complete it.
-                Just <span>hit</span> any buttons on your keyboard and my good
-                friend JavaScript will do all work for you! :-)
-              </label>
               <Typer :text="text" />
               <div class="mybtn mt-3">
-                <button class="butt" title="Actually dont need to ;)">
+                <a
+                  class="btn-grad"
+                  type="button"
+                  title="Actually dont need to ;)"
+                >
                   Send this one to me
-                </button>
+                </a>
               </div>
             </div>
           </form>
@@ -56,10 +65,10 @@
 <script>
 const text = `Hello, my name is Simon. I am from Moscow. Right now, I improve my skills in web development and more specifically in Vue.js. 
 There are some skills that could be useful for your project: 
-- I always seek to learn new things and try to find information I need by myself
+- I always seek to learn new things and try to find the information I need by myself
 - I can handle time management, and always available during working ours  
 - I have experience with project management tools like Jira/Trello, and always update my progress and status
-- I use version control system and follow 'Keep a Changelog'
+- I use a version control system and follow 'Keep a Changelog'
 
 Regards, Simon`;
 export default {
@@ -83,11 +92,28 @@ export default {
 .container {
   max-width: 1400px;
 }
-.butt {
-  background-color: green;
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #215f00 0%,
+    #0f2c06 51%,
+    #215f00 100%
+  );
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: 0.8s;
+  background-size: 200% auto;
   color: white;
+  font-size: 1rem;
   font-weight: bold;
+  padding: 0.5rem 0.8rem;
 }
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
 .hidden {
   display: none !important;
 }
@@ -97,6 +123,7 @@ export default {
 .myTitle {
   text-align: center;
   font-weight: bold;
+  text-decoration: underline;
 }
 label {
   font-weight: bolder;
@@ -159,10 +186,15 @@ span {
   border-radius: 10px 10px 0px 0px;
 }
 .me {
+  padding: 5px 0px 1px 0;
+  font-size: 15px;
+  background-color: white;
   text-align: center;
-  background-color: aliceblue;
   width: 100%;
   border-radius: 0px 0px 10px 10px;
   margin: 0;
+}
+.little {
+  font-size: 15px;
 }
 </style>

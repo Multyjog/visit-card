@@ -3,6 +3,8 @@
     <Logo />
     <NavBar />
     <Nuxt />
+    <Stack />
+    <Demo />
     <Footer />
   </div>
 </template>
