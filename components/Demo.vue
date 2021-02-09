@@ -30,6 +30,9 @@
 </template>
 
 <style scoped>
+h3 {
+  font-weight: bolder;
+}
 .overlayButton {
   display: inline-block;
   padding: 15px 25px;

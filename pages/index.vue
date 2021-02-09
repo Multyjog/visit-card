@@ -8,15 +8,20 @@
           <div class="overlay" @click="toggleClicked()">
             <div class="text">No hidden content here</div>
           </div>
-          <h3 class="me">Thats me</h3>
+          <h3 class="me">
+            Person of the Year 2006.
+            <h3 class="little">According to <span>"Time"</span> magazine</h3>
+          </h3>
         </div>
         <div style="float:none" class="col-md-1"></div>
         <div class="col-md-8">
           <h1 class="myTitle mb-5">Little about me</h1>
-          <label class="mb-5"
-            >I live in Moscow. Love extremely sports like: Snowboard and
-            Longboard. I drive a bike, and also kind of funny and interesting
-            person. Contact me, you will like it!
+          <label class="mb-4"
+            >Hello I am from Moscow, but wright now i live in coworking in
+            Antalya, with company of developers that have a 5+ and 10+ years of
+            experience. This guys teaching me every day, to do the RIGHT code,
+            and simple things i can't learn by myself without experience in
+            development.
             <p>
               I still don't have a good CV. So please, help me complete it. Just
               <span>hit</span> any buttons on your keyboard and my good friend
@@ -27,9 +32,13 @@
             <div>
               <Typer :text="text" />
               <div class="mybtn mt-3">
-                <button class="btn-grad" title="Actually dont need to ;)">
+                <a
+                  class="btn-grad"
+                  type="button"
+                  title="Actually dont need to ;)"
+                >
                   Send this one to me
-                </button>
+                </a>
               </div>
             </div>
           </form>
@@ -90,6 +99,7 @@ export default {
     #0f2c06 51%,
     #215f00 100%
   );
+  border-radius: 10px;
   text-transform: uppercase;
   transition: 0.8s;
   background-size: 200% auto;
@@ -176,10 +186,15 @@ span {
   border-radius: 10px 10px 0px 0px;
 }
 .me {
+  padding: 5px 0px 1px 0;
+  font-size: 15px;
   background-color: white;
   text-align: center;
   width: 100%;
   border-radius: 0px 0px 10px 10px;
   margin: 0;
+}
+.little {
+  font-size: 15px;
 }
 </style>
