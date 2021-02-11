@@ -17,18 +17,38 @@
         <div class="col-md-8">
           <h1 class="myTitle mb-5">Little about me</h1>
           <label class="mb-4"
-            >Hello I am from Moscow, but wright now i live in coworking in
-            Antalya, with company of developers that have a 5+ and 10+ years of
-            experience. This guys teaching me every day, to do the RIGHT code,
-            and simple things i can't learn by myself without experience in
-            development.
+            ><span>Hello,</span>
             <p>
-              I still don't have a good CV. So please, help me complete it. Just
-              <span>hit</span> any buttons on your keyboard and my good friend
-              JavaScript will do all work for you! :-)
+              I am Simon, a Frontend Developer. I am from Moscow, but now I live
+              in a coworking space in Antalya, in a company of developers that
+              have 5+ and 10+ years of Full Stack experience. I learn something
+              new from them every day, what I could not learn by myself without
+              experience in development:
             </p>
+            <ul>
+              <li>Create reusable yet simple components and functions</li>
+              <li>Use modern JavaScript techniques and tools</li>
+              <li>
+                Follow "Keep a Changelog", and manage Git branches and commits
+                correctly
+              </li>
+              <li>Estimate and prioritize tasks</li>
+              <li>Follow best practices and respect deadlines</li>
+            </ul>
+            <p>
+              I have some experience with SPA techologies. I know how to set up
+              REST API server and client. Every day I work and improve my Vue.js
+              skills, and also use Nuxt.js for SSR applications. I use
+              responsive design guidelines in my projects. I like to add a
+              little bit of humor.
+            </p>
+            <p>
+              Please,contact me if you have a position for me in your project or
+              need an additional info!
+            </p>
+            <p>Regards, Simon</p>
           </label>
-          <form>
+          <!-- <form>
             <div>
               <Typer :text="text" />
               <div class="mybtn mt-3">
@@ -41,7 +61,7 @@
                 </a>
               </div>
             </div>
-          </form>
+          </form> -->
           <SocialButtons />
         </div>
       </div>
@@ -63,17 +83,9 @@
 </template>
 
 <script>
-const text = `Hello, my name is Simon. I am from Moscow. Right now, I improve my skills in web development and more specifically in Vue.js. 
-There are some skills that could be useful for your project: 
-- I always seek to learn new things and try to find the information I need by myself
-- I can handle time management, and always available during working ours  
-- I have experience with project management tools like Jira/Trello, and always update my progress and status
-- I use a version control system and follow 'Keep a Changelog'
-
-Regards, Simon`;
 export default {
   data() {
-    return { isClicked: false, text: text };
+    return { isClicked: false };
   },
   methods: {
     toggleClicked() {
@@ -89,6 +101,41 @@ export default {
 </script>
 
 <style scoped>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 .container {
   max-width: 1400px;
 }
@@ -137,6 +184,7 @@ button {
   text-align: center;
 }
 span {
+  font-size: 110%;
   font-weight: bolder;
 }
 .overlay {

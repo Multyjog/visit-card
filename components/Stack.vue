@@ -6,10 +6,10 @@
       <img src="~assets/jquery.png" />
       <img src="~assets/rest_API.png" />
       <img src="~assets/vuejs.png" />
-      <img src="~assets/github.png" />
-      <img src="~assets/postman.png" />
       <img src="~assets/nuxtjs.png" />
       <img src="~assets/webpack.png" />
+      <img src="~assets/github.png" />
+      <img src="~assets/postman.png" />
     </div>
   </div>
 </template>
@@ -21,7 +21,7 @@
 .section {
   background-color: rgb(240, 240, 240);
   margin-top: 8rem;
-  padding: 140px;
+  padding: 140px 40px;
 }
 h1 {
   text-decoration: underline;

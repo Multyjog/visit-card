@@ -2,10 +2,10 @@
   <div class="mb-5 container">
     <h1 class="logo mb-5">My projects</h1>
     <div class="row demos">
-      <div class="col-md-4">
+      <div class="col-xl-4 col-xs-12">
         <img class="empty" src="~assets/placeholder.png" />
       </div>
-      <div class="col-md-4 cont">
+      <div class="col-xl-4 col-xs-12 cont">
         <img src="~assets/DemoLorem.png" />
         <div class="overlay">
           <div class="text">
@@ -22,7 +22,7 @@
           >
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-xl-4 col-xs-12">
         <img class="empty" src="~assets/placeholder.png" />
       </div>
     </div>
