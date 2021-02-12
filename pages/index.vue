@@ -19,12 +19,23 @@
           <label class="mb-4"
             ><span>Hello,</span>
             <p>
-              I am Simon, a Frontend Developer. I am from Moscow, but now I live
-              in a coworking space in Antalya, in a company of developers that
-              have 5+ and 10+ years of Full Stack experience. I learn something
-              new from them every day, what I could not learn by myself without
-              experience in development:
+              I am Simon, a Frontend Developer. I live in a coworking space in a company of developers
+              that have 5+ and 10+ years of Full Stack experience. I learn new
+              things from these guys. They beat me hard If I do not to follow
+              best practices. With them I make better and better clean code and
+              provide better and better UI/UX every day.
             </p>
+            <p>My skills:</p>
+            <p>
+              <ul>
+              <li>Mobile friendly designs, UI/UX build on top of HTML,CSS,JS</li>
+              <li>Vue.js application development</li>
+              <li>Nuxt.js for Server Side Rendering applications</li>
+              <li>REST API integration</li>
+              <li>GIT confident user</li>
+              </ul>
+            </p>
+              <p>I like to add a little bit of humor.</p>
             <ul>
               <li>Create reusable yet simple components and functions</li>
               <li>Use modern JavaScript techniques and tools</li>
@@ -35,18 +46,14 @@
               <li>Estimate and prioritize tasks</li>
               <li>Follow best practices and respect deadlines</li>
             </ul>
+
             <p>
-              I have some experience with SPA techologies. I know how to set up
-              REST API server and client. Every day I work and improve my Vue.js
-              skills, and also use Nuxt.js for SSR applications. I use
-              responsive design guidelines in my projects. I like to add a
-              little bit of humor.
+              Please, contact me if you need your problem issues fixed properly
+              for really reasonable price. I'm at start of my carrer and my main
+              goal right now - to bring proper value to client and populating my
+              portfolio.
             </p>
-            <p>
-              Please,contact me if you have a position for me in your project or
-              need an additional info!
-            </p>
-            <p>Regards, Simon</p>
+            <p>Looking towards to our cooperation, Simon</p>
           </label>
           <!-- <form>
             <div>
