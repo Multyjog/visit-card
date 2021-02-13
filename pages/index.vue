@@ -28,7 +28,7 @@
             <p>My skills:</p>
             <p>
               <ul>
-              <li>Mobile friendly designs, UI/UX build on top of HTML,CSS,JS</li>
+              <li>Mobile friendly designs, UI/UX build on top of HTML, CSS, JS</li>
               <li>Vue.js application development</li>
               <li>Nuxt.js for Server Side Rendering applications</li>
               <li>REST API integration</li>

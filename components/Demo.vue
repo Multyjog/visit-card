@@ -9,9 +9,9 @@
         <img src="~assets/DemoLorem.png" />
         <div class="overlay">
           <div class="text">
-            <h3>Super Lorem</h3>
             <p class="mt-2">
-              Easy example of store counter with little JS &amp; API features.
+              Demo E-commerce project. Built on VueJS2, Flex, using open API
+              integration.
             </p>
           </div>
           <a
@@ -46,7 +46,7 @@ h3 {
   background-color: #e0dd11;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px rgb(78, 78, 78);
+  box-shadow: 0 5px rgb(78, 78, 78);
 }
 
 .overlayButton:hover {
@@ -55,7 +55,7 @@ h3 {
 
 .overlayButton:active {
   background-color: #b9b713;
-  box-shadow: 0 5px #666;
+  box-shadow: 0 2px #666;
   transform: translateY(4px);
 }
 .empty {
